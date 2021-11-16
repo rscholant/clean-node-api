@@ -14,8 +14,8 @@
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
     "eslint": "^8.2.0",
-    "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard-with-typescript": "^21.0.1",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
@@ -25,14 +25,14 @@
     "husky": "^7.0.4",
     "jest": "^27.3.1",
     "lint-staged": "^12.0.2",
-    "prettier": "^2.4.1",
+    "prettier-standard": "^16.4.1",
     "ts-jest": "^27.0.7",
     "typescript": "^4.4.4"
   },
   "lint-staged": {
     "*.ts": [
       "eslint --fix",
-      "prettier --write",
+      "prettier-standard --format",
       "yarn test:staged"
     ]
   }
